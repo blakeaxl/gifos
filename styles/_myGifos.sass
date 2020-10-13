@@ -1,0 +1,67 @@
+.home_my_gifos
+    display: none
+    flex-direction: column
+    align-items: center
+    .my_gifos_title
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-bottom: 6vw
+        h2
+            color: #572EE5
+            font-size: 1.2vw
+        img
+            width: 1.5vw
+            height: 1.5vw
+            margin-bottom: 0.2vw
+.home_my_gifos_content_img 
+    width: 8vw
+    height: 8vw
+.home_my_gifos 
+    .fav_text 
+        margin-bottom: 5vw
+.my_gifos_results
+    width: 100vw
+    display: grid
+    grid-template-columns: 20vw 20vw 20vw 22vw
+    grid-auto-flow: row dense
+    grid-gap: 3vw
+    justify-content: center
+    position: relative
+.my_gif_no_results
+    display: flex
+    flex-direction: column
+    align-items: center
+    p
+        color: #50E3C2
+        text-align: center
+        font-size: 1.3vw
+        width: 28vw
+        margin-top: 2vw
+    img
+        width: 8vw
+@media screen and ( max-width:800px  )
+    .my_gifos_results
+        grid-template-columns: 42vw 44vw
+    .home_my_gifos
+        .my_gifos_title
+            h2
+                font-size: 6vmin
+            img
+                width: 7vmin
+                height: 7vmin
+    .my_gif_no_results
+        width: 100vw
+        justify-content: center
+        p
+            font-size: 4vmin
+            width: 50vmin
+            position: relative
+            left: 50%
+            transform: translateX(-50%)
+        img
+            width: 13vmin
+            height: auto
+
+            
+

@@ -1,0 +1,268 @@
+.home_trending 
+    width: 100vw
+    height: 45vw
+    background-color: #F3F5F8
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    transition:  0.3s ease
+
+.home_trending_text 
+    margin-top: 5vw
+    margin-bottom: 2.8vw
+
+
+    h2 
+        font-size: 1.5vw
+        color: #572EE5
+        margin-bottom: 1vw
+
+
+    p 
+        font-family: 'Roboto', sans-serif
+        font-size: 1.1vw
+
+.trending_slider_container
+    width: 80vw
+    height: 23vw
+    overflow: hidden
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+
+.trendig_gifs_container
+
+    position: absolute
+    display: inline-flex
+    left: 0
+    transition: 0.3s ease
+
+.home_trending_gifs 
+    display: flex
+    justify-content: center
+    align-items: center
+
+.home_trending_img
+
+    width: 100%
+    height: 100%
+
+.home_trending_gifs_back 
+    width: 2.5vw
+    height: 2.5vw
+    border: 1px solid #572EE5
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    transition: 0.3s ease
+    cursor: pointer
+
+
+.home_trending_gifs_back:hover 
+    background-color: #572EE5
+
+
+.home_trending_gifs_back_line_a 
+    width: 0.5vw
+    height: 0.1vw
+    background-color: #572EE5
+    position: absolute
+    transform: rotate(45deg)
+    transform-origin: left
+    transition: 0.3s ease
+
+
+.home_trending_gifs_back:hover .home_trending_gifs_back_line_a 
+    background-color: white
+
+
+.home_trending_gifs_back_line_b 
+    width: 0.5vw
+    height: 0.1vw
+    background-color: #572EE5
+    position: absolute
+    transform: rotate(-45deg)
+    transform-origin: left
+    transition: 0.3s ease
+
+
+.home_trending_gifs_back:hover .home_trending_gifs_back_line_b 
+    background-color: white
+
+
+.home_trending_gifs_next 
+    width: 2.5vw
+    height: 2.5vw
+    border: 1px solid #572EE5
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    transition: 0.3s ease
+
+
+.home_trending_gifs_next:hover 
+    background-color: #572EE5
+
+
+.home_trending_gifs_next_line_a 
+    width: 0.5vw
+    height: 0.1vw
+    background-color: #572EE5
+    position: absolute
+    transform: rotate(45deg)
+    transform-origin: right
+    transition: 0.3s ease
+
+
+.home_trending_gifs_next:hover .home_trending_gifs_next_line_a 
+    background-color: white
+
+
+.home_trending_gifs_next_line_b 
+    width: 0.5vw
+    height: 0.1vw
+    background-color: #572EE5
+    position: absolute
+    transform: rotate(-45deg)
+    transform-origin: right
+    transition: 0.3s ease
+
+
+.home_trending_gifs_next:hover .home_trending_gifs_next_line_b 
+    background-color: white
+
+
+.home_trending_gifs_card 
+    background-color: white
+    width: 24.5vw
+    height: 20vw
+    margin: 1vw
+    display: flex
+    position: relative
+    transition: 0.3s ease
+    overflow: hidden
+
+.purple_screen
+
+    width: 100%
+    height: 100%
+    position: absolute
+    opacity: 0.5
+    z-index: 0
+    transition: 0.3s ease
+
+.home_trending_gifs_card:hover .purple_screen
+
+    background-color: #572EE5
+
+.search_gif_result:hover .purple_screen
+
+    background-color: #572EE5
+
+.trending_card_icons 
+    position: absolute
+    display: none
+    justify-content: space-between
+    height: 2vw
+    width: 9vw
+    right: 0
+    margin: 0.5vw
+    z-index: 1
+
+
+.home_trending_gifs_card:hover .trending_card_icons 
+    display: flex
+
+
+.trending_icon 
+    background-color: white
+    color: #572EE5
+    border-radius: 0.5vw
+    width: 2.5vw
+    height: 2.5vw
+    display: flex
+    justify-content: center
+    align-items: center
+    opacity: 0.5
+    transition: 0.3s ease
+    cursor: pointer
+
+
+.trending_icon:hover 
+    opacity: 1
+
+
+.trending_card_text 
+    position: absolute
+    display: none
+    align-self: flex-end
+    flex-direction: column
+    width: 13vw
+    height: 5vw
+    text-align: left
+    font-family: 'Roboto', sans-serif
+    margin-left: 1vw
+    margin-bottom: 1vw
+    z-index: 1
+
+
+.home_trending_gifs_card:hover .trending_card_text 
+    display: flex
+
+
+.trending_card_text h2 
+    color: lightgray
+    font-size: 1vw
+
+
+.trending_card_text h3 
+    color: white
+    font-family: 'Roboto', sans-serif
+    font-size: 1.2vw
+
+.cards_icon
+    width: 1.2vw
+
+@media screen and ( max-width:800px  )
+    .home_trending 
+        height: 95vmin
+    .trending_slider_container
+        overflow-y: hidden
+        overflow-x: scroll
+        height: 75vmin
+        width: 100vw
+    .home_trending_gifs_next
+        display: none
+    .home_trending_gifs_back
+        display: none
+    .home_trending_gifs_card
+        width: 60vmin
+        height: 50vmin
+        .cards_icon
+            visibility: hidden
+        .max_icon
+            visibility: visible
+            opacity: 0
+            width: 50vmin
+            height: 50vmin
+            position: absolute
+            left: -45vmin
+            top: 3vmin
+    .home_trending_gifs_card:hover .purple_screen
+        background-color: transparent
+    .home_trending_text
+        margin-bottom: 0 
+        h2
+            font-size: 5.5vmin
+            margin-bottom: 4vmin
+        p
+            font-size: 4.5vmin
+            width: 50vmin
+    .trending_icon 
+        visibility: hidden
+

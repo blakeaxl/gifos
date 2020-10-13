@@ -1,0 +1,155 @@
+* 
+    margin: 0
+    padding: 0
+    border: 0
+    font-size: 100%
+    font: inherit
+    vertical-align: baseline
+    font-family: 'Montserrat', sans-serif
+    font-size: 16px
+    color: #060A24
+    scroll-behavior: smooth
+body 
+    display: flex
+    justify-content: center
+    transition:  0.3s ease
+body::-webkit-scrollbar 
+    display: none
+@import '_page.sass','_home.sass','_header.sass','_search.sass','_trending.sass','_myGifos.sass','_footer.sass','_favorites.sass','_createGifs.sass','_darkMode.sass'
+.search_results
+    width: 100vw
+    display: none
+    flex-direction: column
+    align-items: center
+.search_gifs
+    width: 100vw
+    display: grid
+    grid-template-columns: 20vw 20vw 20vw 22vw
+    grid-auto-flow: row dense
+    grid-gap: 3vw
+    justify-content: center
+    position: relative
+    transform: translateX(1vw)
+.search_gif_result
+    width: 20vw
+    height: 15vw
+    position: relative
+.search_gifs_name
+    color: #572EE5
+    font-size: 1.7vw
+    margin-bottom: 3.3vw
+.search_gif_result:hover .trending_card_text 
+    display: flex
+    top: 70%
+.search_gif_result:hover .trending_card_icons 
+    display: flex
+.search_more
+    color: #572EE5
+    background-color: white
+    border: 0.1vw solid #572EE5
+    border-radius: 2vw
+    padding: 1vw 2vw
+    font-size: 1vw
+    cursor: pointer
+    margin-top: 4vw
+    margin-bottom: 6vw
+    transition: 0.3s ease
+.search_more:hover
+    background-color: #572EE5
+    color: white
+@media screen and ( max-width:800px  )
+    .search_gifs
+        grid-template-columns: 42vw 44vw
+    .search_gif_result
+        width: 42vw
+        height: 37vw
+        .max_icon
+            visibility: visible
+            opacity: 0
+            width: 50vmin
+            height: 50vmin
+            position: absolute
+            left: -45vmin
+            top: 3vmin
+        .purple_screen
+            opacity: 0
+    .search_gifs_name
+        font-size: 6vmin
+        margin-bottom: 8vmin
+        border-top: 0.3vmin solid lightgray
+        width: 90vmin
+        text-align: center
+        padding-top: 5vmin
+    .search_more
+        font-size: 4.5vmin
+        padding: 4.5vmin 8.5vmin
+        border-radius: 8vmin
+        margin-top: 20vmin
+    .search_more:hover
+        color: #572EE5
+        background-color: white
+.gif_max
+    position: fixed
+    top: 0
+    z-index: 2
+    background-color: white
+    width: 100vw
+    height: 100vh
+    display: none
+    justify-content: center
+    align-items: center
+    .max_close
+        position: absolute
+        top: 5vw
+        left: 78vw
+        width: 1vw
+        cursor: pointer
+    .max_gif_container
+        width: 60vw
+        display: flex
+        justify-content: center
+        align-items: center
+    .max_gif_item
+        width: 45vw
+        height: 25vw
+        margin: 1.5vw
+    .max_title_icons_container
+        width: 44vw
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding-right: 2vw
+        padding-left: 1.8vw 
+        .gif_max_title
+            font-size: 1vw
+            
+    .max_icon
+        border: solid #CED7E1 0.1vw
+        border-radius: 0.3vw
+        width: 1.3vw
+        margin: 0.3vw
+        cursor: pointer
+    .max_icon:nth-child(1)
+        padding: 0.3vw
+    .max_icon:nth-child(2)
+        padding: 0.149vw
+        padding-left: 0.18vw
+        padding-right: 0.18vw
+@media screen and ( max-width:800px  )
+    .gif_max
+        .max_close
+            width: 4vmin
+            top: 10%
+            left: 90%
+        .max_gif_item
+            width: 90vmin
+            height: 70vmin
+        .max_title_icons_container
+            width: 90vmin
+            .gif_max_title
+                font-size: 2.5vmin
+                width: 60vmin
+        .max_icon
+            width: 5vmin
+            border: none
+            margin: 2vmin

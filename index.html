@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GifOS</title>
+    <link rel="icon" sizes="32x32" href="images/logo-desktop.svg" type="image/svg+xml">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/63b3114014.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <main class="page">
+        <div class="gif_max">
+            <img src="images/close.svg" alt="close button" class="max_close">
+            <div class="max_gif_container">
+                <div class="home_trending_gifs_back">
+                    <div class="home_trending_gifs_back_line_a"></div>
+                    <div class="home_trending_gifs_back_line_b"></div>
+                </div>
+                <div>
+                    <img src="/" alt="gif" class="max_gif_item">
+                    <div class="max_title_icons_container">
+                        <h2 class="gif_max_title">Titulo Prueba</h2>
+                        <div class="max_icons_container">
+                            <img src="images/icon-fav-hover.svg" alt="boton de favoritos" class="max_icon fav_max">
+                            <img src="images/icon-download.svg" alt="boton de descarga" class="max_icon download_icon">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home_trending_gifs_next">
+                    <div class="home_trending_gifs_next_line_a"></div>
+                    <div class="home_trending_gifs_next_line_b"></div>
+                </div>
+            </div>
+        </div>
+        <section class="home">
+            <header class="home_header">
+                <div class="home_header_container">
+                    <img src="images/logo-desktop.svg" alt="Logo Gifos" class="home_header_logo header_button"
+                        id="homeId">
+                    <div class="hamburguer_menu">
+                        <div class="line l1"></div>
+                        <div class="line l2"></div>
+                        <div class="line l3"></div>
+                    </div>
+                    <nav class="home_header_nav">
+                        <ul class="home_header_nav_list">
+                            <li class="home_header_nav_list_item night_button" id="day">MODO NOCTURNO</li>
+                            <li class="home_header_nav_list_item fav_button header_button" id="favoritesId">FAVORITOS
+                            </li>
+                            <li class="home_header_nav_list_item my_gifos_button header_button" id="MyGifosId">MIS GIFOS
+                            </li>
+                        </ul>
+                        <div class="home_header_nav_plus header_button" id="createGifId">
+                            <div class="home_header_nav_plus_vertical_bar"></div>
+                            <div class="home_header_nav_plus_horizontal_bar"></div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <div class="create_gif_section">
+                <img src="images/camara.svg" alt="camara" class="create_decoration cam">
+                <img src="images/element-luz-camara.svg" alt="luz de camara" class="light">
+                <div class="create_gif_items_container">
+                    <div class="video_container">
+                        <div class="green_border"></div>
+                        <div class="green_border"></div>
+                        <div class="green_border"></div>
+                        <div class="green_border"></div>
+                        <div class="video_text_container">
+                            <h2>Aquí podrás<br> crear tus propios <span>GIFOS</span></h2>
+                            <p>¡Crea tu GIFO en sólo 3 pasos!<br>(sólo necesitas una cámara para grabar un video)</p>
+                        </div>
+                        <div class="camera_container">
+                            <video class="create_gif_cam" autoplay></video>
+                            <div class="create_purple_screen">
+                                <img src="images/loading.svg" alt="cargando" class="loading">
+                                <p>Estamos subiendo tu GIFO</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="steps_container">
+                        <h3 class="crate_gif_step step1">1</h3>
+                        <h3 class="crate_gif_step step2">2</h3>
+                        <h3 class="crate_gif_step step3">3</h3>
+                    </div>
+                    <div class="create_buttons_container">
+                        <button class="create_gif_start" id="start">comenzar</button>
+                    </div>
+                </div>
+                <img src="images/pelicula.svg" alt="rollo de pelicula" class="create_decoration film">
+            </div>
+            <div class="home_search">
+                <div class="home_search_title">
+                    <h2>Inspírate, busca, guarda, y crea los mejores <span>GIFOS</span></h2>
+                </div>
+                <div class="home_search_nav_bar">
+                    <img src="images/ilustra_header.svg" alt="ilustracion de busqueda" class="home_search_nav_bar_img">
+                    <div class="home_search_nav_bar_textbar">
+                        <img src="images/icon-search.svg" alt="buscar"
+                            class="search_nav_bar_icon search_icon_active search_button" id="searchAfter">
+                        <input type="text" placeholder="Busca GIFOS y más" class="search_text">
+                        <img src="images/icon-search.svg" alt="buscar" class="search_nav_bar_icon" id="default">
+                        <img src="images/close.svg" alt="boton de cerrar" class="search_nav_bar_icon search_button close" id="close">
+                        <div class="search_bar_suggested">
+                            <ul class="suggested_list">
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="home_search_text">
+                    <h2>Trending:</h2>
+                    <ul class="search_trending_terms"></ul>
+                </div>
+            </div>
+            <div class="search_results">
+                <h2 class="search_gifs_name">busqueda</h2>
+                <div class="search_gifs">
+
+                </div>
+                <button class="search_more loadButonSeach">ver más</button>
+            </div>
+            <div class="home_fav">
+                <div class="fav_title">
+                    <img src="images/icon-favoritos.svg" alt="icono de favoritos">
+                    <h2>Favoritos</h2>
+                </div>
+                <div class="fav_no_results">
+                    <div class="fav_img_container">
+                        <img src="images/icon-favoritos.svg" alt="imagen de seccion de favoritos">
+                    </div>
+                    <div class="fav_text">
+                        <p>"¡Guarda tu primer GIFO en Favoritos para que se muestre aquí!"</p>
+                    </div>
+                </div>
+                <div class="fav_gifs"></div>
+                <button class="search_more more_fav_section">ver más</button>
+            </div>
+            <div class="home_my_gifos">
+                <div class="my_gifos_title">
+                    <img src="images/icon-mis-gifos.svg" alt="icono de mis gifos">
+                    <h2>Mis GIFOS</h2>
+                </div>
+                <div class="my_gif_no_results">
+                    <img src="images/icon-mis-gifos-sin-contenido.svg" alt="imagen de la seccion de mis gifos" class="home_my_gifos_content_img">
+                    <div class="fav_text">
+                        <p>¡Anímate a crear tu primer GIFO!</p>
+                    </div>
+                </div>
+                <div class="my_gifos_results"></div>
+                <button class="search_more more_my_gifos">ver más</button>
+            </div>
+            <div class="home_trending">
+                <div class="home_trending_text">
+                    <h2>Trending GIFOS</h2>
+                    <p>Mira los últimos GIFO de nuestra comunidad.</p>
+                </div>
+                <div class="home_trending_gifs">
+                    <div class="home_trending_gifs_back back_trending">
+                        <div class="home_trending_gifs_back_line_a"></div>
+                        <div class="home_trending_gifs_back_line_b"></div>
+                    </div>
+                    <div class="trending_slider_container">
+                        <div class="trendig_gifs_container">
+                        </div>
+                    </div>
+                    <div class="home_trending_gifs_next next_trending">
+                        <div class="home_trending_gifs_next_line_a"></div>
+                        <div class="home_trending_gifs_next_line_b"></div>
+                    </div>
+                </div>
+            </div>
+            <footer class="home_footer">
+                <div class="home_footer_container">
+                    <div class="home_footer_social">
+                        <p class="footer_text footer_share">Compartir en:</p>
+                        <div><i class="icon_footer fab fa-facebook-f"></i>
+                            <i class="icon_footer fab fa-twitter"></i>
+                            <i class="icon_footer fab fa-instagram"></i></div>
+                    </div>
+                    <p class="footer_text">© GIFOS 2020 All Rights Reserved.</p>
+                </div>
+            </footer>
+        </section>
+    </main>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script type="module" src="scripts/script.js"></script>
+</body>
+
+</html>

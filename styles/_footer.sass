@@ -1,0 +1,41 @@
+.home_footer 
+    width: 100vw
+    height: 8vw
+    display: flex
+    justify-content: center
+    align-items: center
+.home_footer_container 
+    width: 78vw
+    height: 8vw
+    display: flex
+    justify-content: space-between
+    align-items: center
+    font-family: 'Roboto', sans-serif
+    font-size: 1vw
+.home_footer_social 
+    display: flex
+.icon_footer
+    color: lightgray
+    cursor: pointer
+    margin-left: 1.8vw
+    transition: 0.3s ease
+.icon_footer:hover 
+    color: #572EE5
+.footer_text
+    font-family: 'Roboto', sans-serif
+    font-size: 1vw
+@media screen and ( max-width:800px  )
+    .home_footer 
+        height: 45vmin
+    .home_footer_container
+        flex-direction: column
+        justify-content: center
+    .home_footer_social
+        flex-direction: column
+        margin-bottom: 7vmin
+    .footer_text
+        font-size: 4vmin
+    .footer_share
+        margin-bottom: 4vmin
+    
+

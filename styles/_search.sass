@@ -1,0 +1,200 @@
+.home_search 
+    width: 100vw
+    height: 40vw
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+
+.home_search_title
+    text-align: center
+    color: #572EE5
+    font-size: 2vw
+    width: 35vw
+
+    h2
+        color: #572EE5
+        font-size: 2vw
+
+    span 
+        color: #5ED7C6
+        font-size: 2vw
+
+
+.home_search_nav_bar 
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-bottom: 1.5vw
+    position: relative
+
+.home_search_nav_bar_img 
+    width: 30vw
+    height: 20vw
+
+
+.home_search_nav_bar_textbar 
+    width: 40vw
+    border: 1px solid #572EE5
+    border-radius: 1.5vw
+    position: absolute
+    top: -2.8vw
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-color: white
+    top: 17.2vw
+    z-index: 1
+
+.home_search_nav_bar_textbar input
+    width: 35vw
+    height: 2.5vw
+    position: relative
+    font-family: 'Roboto', sans-serif
+    left: 1vw
+    outline: none
+    font-size: 1vw
+
+.home_search_nav_bar_textbar input::placeholder
+    font-family: 'Roboto', sans-serif
+    font-size: 1vw
+    color: #9CAFC3
+
+.search_nav_bar_icon
+    position: absolute
+    top: 0.8vw
+    right: 0.8vw
+    width: 1.2vw
+    height: 1.2vw
+    cursor: pointer
+
+.search_icon_active
+    left: 1.5vw
+    display: none
+.close
+    display: none
+    width: 1vw
+.search_bar_suggested
+    width: 36.8vw
+    font-family: 'Roboto', sans-serif
+    font-size: 1vw
+    border-top: 0.1vw solid #9CAFC3
+    opacity: 0.5
+    overflow: hidden
+    transition: 0.3s ease
+    margin-top: 0.3vw
+
+.suggested_list_item
+    list-style-type: none
+    cursor: pointer
+    font-size: 1vw
+    color: #9CAFC3
+    margin-left: 1vw
+.suggested_item_container
+    display: flex
+    margin-bottom: 1vw
+.suggested_item_container:nth-child(1)
+    margin-top: 1vw
+.sugg_icon
+    width: 1vw
+.home_search_text 
+    width: 45vw
+    color: #572EE5
+    text-align: center
+    font-size: 1vw
+    margin-top: 3.8vw
+    margin-bottom: 3.8vw
+
+
+    h2 
+        color: #572EE5
+        margin-bottom: 1vw
+        font-size: 1.1vw
+
+
+    ul
+        width: 50vw
+        display: flex
+        li
+            list-style: none
+            color: #572EE5
+            font-family: 'Montserrat-medium', sans-serif
+            font-size: 1vw
+            cursor: pointer
+            margin: 0.5vw
+.no_gifs_in_search
+    width: 90vw
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    p
+        color: #50E3C2
+        font-size: 1vw
+    img
+        width: 8vw
+        margin-bottom: 2vw
+        margin-top: 2vw
+@media screen and ( max-width:800px  )
+    .home_search
+        margin-top: 40vmin
+        margin-bottom: 60vmin
+    .home_search_title
+        width: 80vmin
+        h2
+            font-size: 7vmin
+        span
+            font-size: 7vmin
+    .home_search_nav_bar_img 
+        width: 75vmin
+        height: auto
+    .home_search_nav_bar_textbar 
+        width: 90vmin
+        border-radius: 8vmin
+        top: 36vmin
+        input
+            width: 60vmin
+            height: 13vmin
+            font-size: 4.3vmin
+            left: 0
+        input::placeholder
+            font-size: 4.3vmin
+    .search_nav_bar_icon
+        width: 5vmin
+        height: 5vmin
+        top: 4vmin
+        right: 6vmin
+    .search_icon_active
+        left: 5vmin
+        top: 4vmin
+    .close
+        width: 4vmin
+    .search_bar_suggested
+        width: 70vmin
+    .suggested_list_item
+        font-size: 4.5vmin
+        margin: 2vmin
+    .sugg_icon
+        width: 4vmin
+    .home_search_text
+        margin-top: 20vmin
+        width: 90vmin
+        h2
+            font-size: 5vmin
+            margin-bottom: 5vmin
+        ul
+            width: 100vw
+            display: grid
+            grid-template-columns: 20vmin 20vmin 20vmin 24vmin
+            li
+                font-size: 3vmin
+                margin: 1vmin
+                margin-bottom: 2vmin
+    .no_gifs_in_search
+        width: 85vw
+        p
+            font-size: 5vmin
+        img
+            width: 35vmin

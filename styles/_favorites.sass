@@ -1,0 +1,87 @@
+.home_fav 
+    display: none
+    flex-direction: column
+    align-items: center
+.fav_title 
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-bottom: 6vw
+.fav_title
+    h2
+        color: #572EE5
+        font-size: 1.2vw
+    img 
+        width: 1.5vw
+        height: 1.5vw
+        margin-bottom: 0.2vw
+.fav_img_container 
+    width: 8vw
+    height: 8vw
+    border-radius: 50%
+    background-color: #F3F5F8
+    display: flex
+    justify-content: center
+    align-items: center
+.fav_img_container img 
+    width: 3.8vw
+    height: 3.8vw
+.fav_text 
+    color: #50E3C2
+    text-align: center
+    font-size: 1.3vw
+    width: 28vw
+    margin-top: 2vw
+    margin-bottom: 5vw
+.fav_gifs
+    width: 100vw
+    display: grid
+    grid-template-columns: 20vw 20vw 20vw 22vw
+    grid-auto-flow: row dense
+    grid-gap: 3vw
+    justify-content: center
+    position: relative
+.fav_no_results
+    display: flex
+    flex-direction: column
+    align-items: center
+    p
+        color: #50E3C2
+        text-align: center
+        font-size: 1.3vw
+        width: 28vw
+        margin-top: 2vw
+    img
+        width: 8vw
+.trending_icon
+    i
+        color: #572EE5
+@media screen and ( max-width:800px  )
+    .home_fav 
+        width: 100vw
+    .fav_title
+        h2
+            font-size: 6vmin
+        img
+            width: 7vmin
+            height: 7vmin
+    .fav_no_results
+        width: 100vw
+        justify-content: center
+        p
+            font-size: 4vmin
+            width: 50vmin
+            position: relative
+            left: 50%
+            transform: translateX(-50%)
+
+        img
+            width: 13vmin
+            height: auto
+
+        .fav_img_container
+            width: 20vmin
+            height: 20vmin
+            margin-bottom: 10vmin
+    .fav_gifs
+        grid-template-columns: 42vw 44vw
