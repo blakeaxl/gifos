@@ -84,6 +84,7 @@ startButton.addEventListener('click', async () => {API.RecordGifSteps(startButto
  */
 const darkModeBtn = document.querySelector('.night_button');
 darkModeBtn.addEventListener('click', () => {
+  document.querySelector('.home_search').id = 'homeId';
   if(darkModeBtn.id == 'day')
   {
     darkModeBtn.innerHTML = 'MODO DIURNO';
